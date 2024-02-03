@@ -14,10 +14,10 @@ import org.junit.runner.RunWith;
         //glue is the keyword we use in gherkin step definition
         //we provide the path package where we have  all step definitions.
         glue = "steps",
-        dryRun = false,
+        dryRun = true,
         // dry run stops execution when set to true
         //it will scan all the steps definition and provide if there is any step definition
-        tags = "@Sprint2",
+        tags = "@error",
         //tags = "@Sprint2 or @Sprint5"  and /or operator condition
         plugin = {"pretty"}
 
