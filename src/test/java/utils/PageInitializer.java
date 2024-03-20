@@ -21,5 +21,4 @@ public class PageInitializer {
         employeeSearchPage = new EmployeeSearchPage();
     }
 
-
 }

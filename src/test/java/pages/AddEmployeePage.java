@@ -37,6 +37,10 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(id="chkLogin")
     public WebElement checkBox;
 
+    @FindBy(id="employeeId")
+    public WebElement empIdLoc;
+
+
     public AddEmployeePage(){
         //We use page factory to initialize all web Elements and driver we pass as
         // argument to it. This keyword means, we need to initialize all the element

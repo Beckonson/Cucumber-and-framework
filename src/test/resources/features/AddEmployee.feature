@@ -31,9 +31,24 @@ Feature: Add Employees in HRMS
       |savera     |ms          |usman     |
       |sino       |ms          |karimi    |
 
+  @datatable
+  Scenario: Adding employees from data table
+    When user add multiple employees from datatable and verify they are added
+      |firstName|middleName|lastName|
+      |sino     |ms        |SP      |
+      |diana    |ms        |longone |
+      |indira   |ms        |gandhi  |
+
   @excel
   Scenario: Adding employees from excel file
     When user adds multiple employees from excel and verify the employee has added
+
+  @dbTest @regression
+  Scenario: Adding employee from feature file
+    When user enters "aaron" "ms" and "sairam"
+    And user clicks on save button
+    Then employee added successfully
+    And fetch the information from backend
 
 
 
